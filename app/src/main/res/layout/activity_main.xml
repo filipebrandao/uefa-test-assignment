@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:gravity="center"
+        android:minHeight="?actionBarSize"
+        android:padding="@dimen/appbar_padding"
+        android:text="@string/to_be_implemented"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@color/textColor" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/textColorAccent"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/textColorAccent"
+        app:tabTextColor="@color/textColor" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@id/tabs"
+        app:layout_anchorGravity="bottom"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UEFA Test</string>
+    <string name="tab_overview">Overview</string>
+    <string name="tab_lineups">Line ups</string>
+    <string name="tab_stats">Stats</string>
+    <string name="tab_matchinfo">Match Info</string>
+
+    <string name="to_be_implemented">To be implemented</string>
+    <string name="attacking">Attacking</string>
+
+</resources>
